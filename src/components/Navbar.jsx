@@ -27,7 +27,7 @@ const Navbar = () => {
 
         <div className={`md:hidden mt-5 bg-beige overflow-hidden rounded-lg transition-all duration-500 ease-in-out ${
             isOpen ? "max-h-96 opacity-100 " : "max-h-0 opacity-0 pointer-events-none"}`}>
-            <div className='p-5'>
+            <div className='p-5' onClick={() => setIsOpen(!isOpen)}>
             <ul className="flex flex-col gap-4 m-3 text-lg font-medium">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
