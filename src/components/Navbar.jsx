@@ -10,7 +10,7 @@ const Navbar = () => {
 
         
         <ul className="hidden md:flex space-x-7 text-lg font-medium">
-            <li><a className="hover:text-orange transition-colors duration-200" href="/">Home</a></li>
+            <li><a className="hover:text-orange transition-colors duration-200" href="#home">Home</a></li>
             <li><a className="hover:text-orange transition-colors duration-200" href="#menu">Menu</a></li>
             <li><a className="hover:text-orange transition-colors duration-200" href="#about">About</a></li>
             <li><a className="hover:text-orange transition-colors duration-200" href="#contact">Contact</a></li>
@@ -29,7 +29,7 @@ const Navbar = () => {
             isOpen ? "max-h-96 opacity-100 " : "max-h-0 opacity-0 pointer-events-none"}`}>
             <div className='p-5'>
             <ul className="flex flex-col gap-4 m-3 text-lg font-medium">
-                <li><a href="/">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
