@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg from '../assets/hero.avif'
+import heroImg from '../assets/Hero.avif'
 const Hero = () => {
   return (
     <section id="home" className="min-h-[80vh] flex flex-col md:gap-10 gap-8 md:flex-row items-center px-5 md:px-10 py-5 bg-beige">
