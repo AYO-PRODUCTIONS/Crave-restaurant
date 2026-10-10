@@ -17,7 +17,7 @@ const Navbar = () => {
         </ul>
 
         <button className="hidden md:block bg-orange text-white rounded-full px-5 py-2 font-medium hover:bg-espresso transition-colors duration-300">
-           <a href="#menu">Order Now</a>50266043
+           <a href="#menu">Order Now</a>
         </button>
         
         <button className="md:hidden text-espresso" onClick={() => setIsOpen(!isOpen)}>
