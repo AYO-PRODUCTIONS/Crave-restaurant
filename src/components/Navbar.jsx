@@ -16,16 +16,16 @@ const Navbar = () => {
             <li><a className="hover:text-orange transition-colors duration-200" href="#contact">Contact</a></li>
         </ul>
 
-        <button className="hidden md:block bg-orange text-white rounded-full px-5 py-2 font-medium hover:bg-espresso transition-colors duration-300">
-           <a href="#menu">Order Now</a>
-        </button>
+        <a href="#menu" className="hidden md:block bg-orange text-white rounded-full px-5 py-2 font-medium hover:bg-espresso transition-colors duration-300">
+            Order Now
+        </a>
         
-        <button className="md:hidden text-espresso" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28}/> : <Menu size={28}/>}
+        <button className="md:hidden text-espresso p-1 rounded-lg" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} aria-controls="mobile-navigation">
+            {isOpen ? <X size={28} aria-hidden="true" /> : <Menu size={28} aria-hidden="true" />}
         </button>
        </div>
 
-        <div className={`md:hidden mt-5 bg-beige overflow-hidden rounded-lg transition-all duration-500 ease-in-out ${
+        <div id="mobile-navigation" className={`md:hidden mt-5 bg-beige overflow-hidden rounded-lg transition-all duration-500 ease-in-out ${
             isOpen ? "max-h-96 opacity-100 " : "max-h-0 opacity-0 pointer-events-none"}`}>
             <div className='p-5' onClick={() => setIsOpen(!isOpen)}>
             <ul className="flex flex-col gap-4 m-3 text-lg font-medium">
@@ -34,9 +34,9 @@ const Navbar = () => {
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button  className="mt-5 bg-orange text-white rounded-full px-5 py-2 font-medium">
-                <a href="#menu">Order Now</a>
-            </button>
+            <a href="#menu" className="inline-block mt-5 bg-orange text-white rounded-full px-5 py-2 font-medium">
+                Order Now
+            </a>
             </div>
         </div>
 
