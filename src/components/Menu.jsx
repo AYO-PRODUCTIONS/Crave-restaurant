@@ -1,6 +1,6 @@
 import React from 'react'
 import salmonImg from '../assets/Menu-salmon.avif'
-import steakImg from '../assets/Menu-steak.jpg'
+import steakImg from '../assets/Menu-steak.webp'
 import pastaImg from '../assets/Menu-pasta.avif'
 
 const Menu = () => {
