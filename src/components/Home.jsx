@@ -4,7 +4,7 @@ import Menu from './Menu'
 import About from './About'
 import WhyUS from './WhyUS'
 import Contact from './Contact'
-import Footer from './Footer'
+
 
 
 const Home = () => {
@@ -16,7 +16,6 @@ const Home = () => {
         <About/>
         <WhyUS/>
         <Contact/>
-        <Footer/>
     </div>
   )
 }
